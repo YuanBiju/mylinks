@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/jpg" href="../static/imgs/logo.jpg" />
+    <!--<link rel="stylesheet" href="../fron/css/style.css" />-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    <script src = "../frontend/static/js/style.js"></script>
+</head>
+
+<body>
+    <div id="bind">
+        <div id="profile-pic">
+            <!-- Draw everything relative to a 200x200 canvas, this will then scale to any resolution -->
+            <svg viewBox="0 0 200 200">
+                <defs>
+                <!-- Our gradient fill #gradient -->
+                <linearGradient id="gradient" gradientTransform="rotate(90)">
+                    <!-- Use CSS custom properties for the start / stop colors of the gradient -->
+                    <stop id="gradientStop1" offset="0%" stop-color="var(--startColor)" />
+                    <stop id="gradientStop2 " offset="100%" stop-color="var(--stopColor)" />
+                </linearGradient>
+                </defs>
+                <path d="" fill="url('#gradient')"></path>
+            </svg>
+            <img src="../static/imgs/profile.jpg" alt="Avatar" />
+            <!--<svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(482.89814416193144 265.82724050354966)">
+                    <path id="blob1"
+                        d="M207.7 -190.7C259.9 -155.6 286.4 -77.8 277.4 -9.1C268.3 59.6 223.6 119.3 171.4 160.4C119.3 201.6 59.6 224.3 -0.8 225.1C-61.3 225.9 -122.6 204.9 -178.8 163.7C-235.1 122.6 -286.3 61.3 -284.9 1.4C-283.5 -58.5 -229.4 -116.9 -173.2 -152.1C-116.9 -187.2 -58.5 -199.1 9.7 -208.7C77.8 -218.4 155.6 -225.9 207.7 -190.7"
+                        fill="#BB004B"></path>
+                </g>
+                <g transform="translate(443.7637096656211 276.00982674171985)">
+                    <path id="blob2" style="visibility: hidden;"
+                        d="M184.5 -169.7C240.7 -128.2 289.1 -64.1 281.9 -7.2C274.7 49.7 211.9 99.4 155.7 136.9C99.4 174.4 49.7 199.7 -10.1 209.9C-70 220 -140 215 -176 177.5C-212 140 -214 70 -206.8 7.2C-199.6 -55.6 -183.3 -111.3 -147.3 -152.8C-111.3 -194.3 -55.6 -221.6 4.2 -225.9C64.1 -230.1 128.2 -211.2 184.5 -169.7"
+                        fill="#BB004B"></path>
+                </g>
+            </svg>-->
+        </div>
+        <div id = "name-container"><p>Yuan Nevin Biju</p></div>
+        <div id="links-list">
+            <ul>
+                <li><!--<i class="fa fa-linkedin"></i>--><a href="https://www.linkedin.com/in/yuan-biju-6974b7185/"target="_blank">Linkedin</a></li>
+                <li><!--<i class="fa fa-github"></i>--><a href="https://github.com/baitMaker/" target="_blank">Github</a></li>
+                <li><!--<i class="fa fa-codepen">--></i><a href="https://codepen.io/baitMaker/" target="_blank">Codepen</a>
+                </li>
+                <li>
+                    <!--<div class="link-logo replit-logo">
+                        <svg viewBox="0 0 100 100" class="jsx-4131126525">
+                            <path
+                                d="M98.849 45.191zM26.042 44.932S12.394 95.218 67.097 95.656c17.163-6.39 29.81-22.054 31.727-40.939.132-1.306.171-2.639.2-3.973.006-.352.053-.693.053-1.046 0-1.521-.093-3.02-.227-4.507-14.452 56.894-78.388 34.61-72.808-.259z"
+                                class="jsx-4131126525"></path>
+                            <path
+                                d="M54.326 26.267S3.395 12.044 4.178 67.58a49.217 49.217 0 0011.87 17.742c.218.207.444.403.665.606a49.233 49.233 0 004.654 3.793c.253.18.49.38.744.556a48.884 48.884 0 005.373 3.19c.54.278 1.094.532 1.641.791a48.592 48.592 0 004.907 1.991c.41.14.802.315 1.218.446a48.66 48.66 0 006.108 1.444c.624.11 1.256.201 1.888.288 2.142.31 4.302.478 6.467.503.083 0 .163.013.246.013 1.632 0 3.244-.088 4.833-.244-57.146-13.628-35.425-77.529-.466-72.43z"
+                                class="jsx-4131126525"></path>
+                            <path
+                                d="M74.178 52.604s12.05-50.8-42.19-48.532C13.8 11.257.924 28.954.924 49.694c.017 2.233.185 4.463.504 6.673 11.415-57.474 76.448-38.86 72.75-3.763z"
+                                class="jsx-4131126525"></path>
+                            <path
+                                d="M48.135 74.465s51.02 6.66 47.827-41.848c-6.944-18.672-24.873-32-45.961-32a49.258 49.258 0 00-8.9.846c56.85 6.979 42.074 73.498 7.034 73.002z"
+                                class="jsx-4131126525"></path>
+                            <path d="M64.163 49.7a13.746 13.746 0 11-27.493-.001 13.746 13.746 0 0127.493 0z"
+                                class="jsx-4131126525"></path>
+                        </svg>
+                    </div>-->
+                    <a href="https://replit.com/@YuanBiju" target="_blank">Replit</a>
+                </li>
+            </ul>
+        </div>
+        <div id = "made-by-container"><p>Made by Yuan</p></div>
+    </div>
+
+    <script src = "../frontend/static/js/index.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

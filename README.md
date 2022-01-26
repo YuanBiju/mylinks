@@ -1,5 +1,5 @@
 # mylinks - A webpage serving as a home for all my social media links
-Link `https://baitmaker.github.io/mylinks/`
+Link - https://baitmaker.github.io/mylinks/
 ## Resources 
 </br>
 Animated blob code from:
